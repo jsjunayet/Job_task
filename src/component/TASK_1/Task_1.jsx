@@ -5,6 +5,7 @@ import HomeCard from "./HomeCard";
 import Contact from './Contact';
 import Profile from './Profile';
 import { FaCode } from "react-icons/fa";
+import Navbar from '../Navbar/Navbar';
 const Task_1 = () => {
     const menu = [
         {
@@ -32,6 +33,7 @@ const Task_1 = () => {
 
     return (
         <div className=' max-w-7xl mx-auto '>
+            <Navbar></Navbar>
             <div className='flex justify-between items-center mt-5 mb-10'>
                 <div>
                     <p className='text-2xl font-semibold'>Simple Tabs</p>
@@ -44,10 +46,10 @@ const Task_1 = () => {
             <Tabs selectedIndex={tabIndex} onSelect={(index) => setTabIndex(index)} >
                 <div className=" text-xl">
                     <TabList>
-                        <Tab><div className={`cursor-pointer ${tabIndex === 0 ? 'text-blue-500' : 'text-gray-500 hover:text-blue-500'}`}>Home</div></Tab>
-                        <Tab><div className={`cursor-pointer ${tabIndex === 1 ? 'text-blue-500' : 'text-gray-500 hover:text-blue-500'}`}>Profile</div></Tab>
-                        <Tab><div className={`cursor-pointer ${tabIndex === 2 ? 'text-blue-500' : 'text-gray-500 hover:text-blue-500'}`}>Contact</div></Tab>
-                        <Tab disabled>Dashboard</Tab>
+                        <Tab><div className={`cursor-pointer ${tabIndex === 0 ? 'text-blue-500' : 'text-gray-900 hover:text-blue-500'}`}>Home</div></Tab>
+                        <Tab><div className={`cursor-pointer ${tabIndex === 1 ? 'text-blue-500' : 'text-gray-900 hover:text-blue-500'}`}>Profile</div></Tab>
+                        <Tab><div className={`cursor-pointer ${tabIndex === 2 ? 'text-blue-500' : 'text-gray-900 hover:text-blue-500'}`}>Contact</div></Tab>
+                        <Tab disabled><div className={"cursor-pointer text-gray-400"}>Dashboard</div></Tab>
 
                     </TabList>
                 </div>

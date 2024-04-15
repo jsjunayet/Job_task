@@ -10,7 +10,7 @@ const DataTable = () => {
 
 
     return (
-        <div>
+        <div className="mt-10">
             <DataGrid
                 rows={datas}
                 columns={userColumns}
